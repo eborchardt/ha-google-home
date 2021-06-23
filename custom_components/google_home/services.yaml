@@ -46,3 +46,21 @@ delete_timer:
       required: true
       selector:
         text:
+        
+add_timer:
+  description: Add a timer to a Google Home device.
+  fields:
+    entity_id:
+      name: Entity
+      description: Represents a Google Home device (sensor.xxxx_timers).
+      example: "sensor.kitchen_timers"
+      required: true
+      selector:
+        text:
+    timer_id:
+      name: Timer ID
+      description: ID of a timer (timer/xxx).
+      example: "timer/6ed06a56-8a58-c6e3-a7d4-03f92c9d8a51"
+      required: true
+      selector:
+        text:
